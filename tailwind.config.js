@@ -13,6 +13,10 @@ module.exports = {
       colors:{
         'color-logo' :'#132749',
       },
+      fontFamily:{
+        'nunito' : '"Nunito Sans", sans-serif',
+        'siliguri' : '"Hind Siliguri", sans-serif',
+      },
     },
   },
   plugins: [
