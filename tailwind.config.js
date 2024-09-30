@@ -16,6 +16,7 @@ module.exports = {
       fontFamily:{
         'nunito' : '"Nunito Sans", sans-serif',
         'siliguri' : '"Hind Siliguri", sans-serif',
+        'bangla' : '"AdorshoLipi", sans-serif',
       },
     },
   },
