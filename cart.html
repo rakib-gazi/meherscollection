@@ -354,160 +354,127 @@
         </section>
     </header>
     <main>
-         <!-- Product Section -->
+    <!-- Product Section -->
     <section class="container mx-auto">
-        <div class="bg-white p-4 rounded-lg shadow-lg">
-            <!-- Product Details Container -->
-            <div class="flex flex-col md:flex-row pt-0 lg:pt-12 font-siliguri gap-12">
-                <!-- Product Images -->
-                <div class="md:w-1/2">
-                    <img src="images/2.webp" alt="Product Image" class="w-full h-96 object-contain mb-4 rounded-lg">
-                    <!-- Thumbnails -->
-                    <div class="grid grid-cols-3 lg:grid-cols-5 gap-4">
-                        <img src="images/3.webp" alt="Thumbnail 1" class="w-24 lg:w-32 h-24 lg:h-32 object-cover rounded-lg">
-                        <img src="images/4.webp" alt="Thumbnail 2" class="w-24 lg:w-32 h-24 lg:h-32 object-cover rounded-lg">
-                        <img src="images/3.webp" alt="Thumbnail 1" class="w-24 lg:w-32 h-24 lg:h-32 object-cover rounded-lg">
-                        <img src="images/4.webp" alt="Thumbnail 2" class="w-24 lg:w-32 h-24 lg:h-32 object-cover rounded-lg">
-                        <img src="images/3.webp" alt="Thumbnail 1" class="w-24 lg:w-32 h-24 lg:h-32 object-cover rounded-lg">
+        <div class="bg-white p-4 rounded-lg shadow-lg my-12">
+            <!-- Cart Items -->
+            <div class="col-span-1 lg:col-span-8">
+                <!-- Cart div -->
+                <div>
+                    <div class="hidden md:block">
+                        <div class="grid grid-cols-5 pb-4 text-center font-nunito font-bold text-xl text-color-logo">
+                            <p>Product Image</p>
+                            <p>Product Name</p>
+                            <p>Price</p>
+                            <p>Quantity</p>
+                            <p>Action</p>
+                        </div>
+                    </div>
+                    <div class="text-center font-nunito  text-color-logo block md:hidden">
+                        <p class="font-bold text-2xl pb-2">Cart Details</p>
+                    </div>
+                    <hr class="border border-gray-400">
+                    <div class="font-siliguri">
+                        <div class="grid grid-col-1 md:grid-cols-5 pb-4 text-center pt-2 gap-y-2 md:gap-y-0 ps-12 md:ps-0">
+                            <div class="flex justify-start md:justify-center items-center">
+                                <img src="images/2.webp" alt="Miniket Standard 1kg" class="w-32 h-32 ">
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center">
+                                <p class=" font-semibold text-color-logo me-4 block md:hidden">প্রোডাক্ট:</p>
+                                <p class="text-base lg:text-xl">খাসির মাংস উইথ কালা ভূনা</p>
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center">
+                                <p class=" font-semibold font-2xl text-color-logo me-4 block md:hidden">পরিমাণ:</p>
+                                <input type="number" value="1" class="w-16 text-center border border-gray-300 rounded py-1">
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center">
+                                <p class=" font-semibold font-2xl text-color-logo me-4 block md:hidden">দাম:</p>
+                                <p class="text-base lg:text-xl" >২২০ টাকা</p>
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center">
+                                <button class="text-white bg-orange-500 px-4 py-2 rounded-md hover:bg-red-500 font-bold">বাদ দিন</button>
+                            </div>
+                        </div>
+                        <hr class="border border-gray-400">
+                    </div>
+                    <div class="font-siliguri">
+                        <div class="grid grid-col-1 md:grid-cols-5 pb-4 text-center pt-2 gap-y-2 md:gap-y-0 ps-12 md:ps-0">
+                            <div class="flex justify-start md:justify-center items-center">
+                                <img src="images/2.webp" alt="Miniket Standard 1kg" class="w-32 h-32 ">
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center">
+                                <p class=" font-semibold text-color-logo me-4 block md:hidden">প্রোডাক্ট:</p>
+                                <p class="text-base lg:text-xl">খাসির মাংস উইথ কালা ভূনা</p>
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center">
+                                <p class=" font-semibold font-2xl text-color-logo me-4 block md:hidden">পরিমাণ:</p>
+                                <input type="number" value="1" class="w-16 text-center border border-gray-300 rounded py-1">
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center">
+                                <p class=" font-semibold font-2xl text-color-logo me-4 block md:hidden">দাম:</p>
+                                <p class="text-base lg:text-xl" >২২০ টাকা</p>
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center">
+                                <button class="text-white bg-orange-500 px-4 py-2 rounded-md hover:bg-red-500 font-bold">বাদ দিন</button>
+                            </div>
+                        </div>
+                        <hr class="border border-gray-400">
+                    </div>
+                    <div class="font-siliguri">
+                        <div class="grid grid-col-1 md:grid-cols-5 pb-4 text-center pt-2 gap-y-2 md:gap-y-0 ps-12 md:ps-0">
+                            <div class="flex justify-start md:justify-center items-center">
+                                <img src="images/2.webp" alt="Miniket Standard 1kg" class="w-32 h-32 ">
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center">
+                                <p class=" font-semibold text-color-logo me-4 block md:hidden">প্রোডাক্ট:</p>
+                                <p class="text-base lg:text-xl">খাসির মাংস উইথ কালা ভূনা</p>
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center">
+                                <p class=" font-semibold font-2xl text-color-logo me-4 block md:hidden">পরিমাণ:</p>
+                                <input type="number" value="1" class="w-16 text-center border border-gray-300 rounded py-1">
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center">
+                                <p class=" font-semibold font-2xl text-color-logo me-4 block md:hidden">দাম:</p>
+                                <p class="text-base lg:text-xl" >২২০ টাকা</p>
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center">
+                                <button class="text-white bg-orange-500 px-4 py-2 rounded-md hover:bg-red-500 font-bold">বাদ দিন</button>
+                            </div>
+                        </div>
+                        <hr class="border border-gray-400">
+                    </div>
+                    <div class="font-siliguri">
+                        <div class="grid grid-cols-2 md:grid-cols-5 pb-4 text-center pt-2 gap-y-2 md:gap-y-0 ps-12 md:ps-0 font-bold">
+                            <div class="flex justify-start md:justify-center items-center col-span-0 md:col-span-3">
+                                <p class="text-base lg:text-xl">সাব-টোটাল</p>
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center col-span-0 md:col-span-2">
+                                <p  class="text-base lg:text-xl">২২০ টাকা</p>
+                            </div>
+                        </div>
+                        <hr class="border border-gray-400">
                     </div>
                 </div>
-        
-                <!-- Product Info -->
-                <div class="md:w-1/2 md:pl-8">
-                    <h1 class="text-lg lg:text-2xl font-bold mb-4 text-color-logo">গৃহপালিত বিশাল লেজ্ওয়ালা ডিম লাইট  উইথ ছাতা</h1>
-                    <p class="text-base lg:text-lg text-gray-700 mb-2"><span class="font-bold text-color-logo">ক্যাটাগরি :</span> খরগসের বাসা</p>
-                    <p class="text-green-500 font-semibold text-base lg:text-lg mb-2"> 
-                        <span class="font-bold text-color-logo me-2">দাম :</span>
-                        Tk 9715 
-                        <span class="line-through text-gray-500">Tk 14500</span> 
-                        <span class="text-red-500 font-bangla text-sm">(১০% ছাড়)</span>
-                    </p>
-                    <p class="text-base lg:text-lg text-gray-700 mb-2"><span class="font-bold text-color-logo">পৃথিবীর ভিতরে:</span> পৃথিবীর ভিতরে ২0 টাকা আর মঙ্গলগ্রহে ৩0 টাকা</p>
-                    <div class="flex items-center mb-4">
-                        <div class="flex items-center">
-                            <!-- Star Ratings -->
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.535L.489 6.91l6.565-.955L10 0l2.946 5.955 6.565.955-4.755 4.645 1.122 6.535z"></path></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.535L.489 6.91l6.565-.955L10 0l2.946 5.955 6.565.955-4.755 4.645 1.122 6.535z"></path></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.535L.489 6.91l6.565-.955L10 0l2.946 5.955 6.565.955-4.755 4.645 1.122 6.535z"></path></svg>
-                            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.535L.489 6.91l6.565-.955L10 0l2.946 5.955 6.565.955-4.755 4.645 1.122 6.535z"></path></svg>
-                            <svg class="w-5 h-5 text-gray-300" fill="currentColor" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.122-6.535L.489 6.91l6.565-.955L10 0l2.946 5.955 6.565.955-4.755 4.645 1.122 6.535z"></path></svg>
-                        </div>
-                        <p class="text-gray-500 ml-2">(1 Review)</p>
-                    </div>
-                    <!-- Quantity Selector and Add to Cart -->
-                    <div class="flex items-center mb-4">
-                        <div class="flex items-center border border-gray-300 rounded-lg overflow-hidden">
-                            <button class="px-2 py-1 text-gray-700 bg-gray-100 hover:bg-gray-200">-</button>
-                            <input type="text" class="w-12 text-center py-1 border-none" value="1">
-                            <button class="px-2 py-1 text-gray-700 bg-gray-100 hover:bg-gray-200">+</button>
-                        </div>
-                        <button class="text-sm lg:text-base ml-4 bg-color-logo text-white px-4 py-2 rounded-lg hover:bg-orange-600">কার্টে যোগ করুন</button>
-                        <button class="text-sm lg:text-base ml-4 bg-color-logo text-white px-4 py-2 rounded-lg hover:bg-orange-600">অর্ডার করুন</button>
-                    </div>
-                    <div class="">
-                        <p class="font-bold text-color-logo text-base lg:text-lg "> বিস্তারিত: </p>
-                       <p class="font-siliguri text-base lg:text-lg text-gray-700">
-                        গরু আমাদের সমাজে একটি অত্যন্ত গুরুত্বপূর্ণ প্রাণী। এটি মূলত গৃহপালিত এবং কৃষিকাজ ও দুধ উৎপাদনের জন্য ব্যবহৃত হয়। গরুর দুধ আমাদের পুষ্টির একটি বড় উৎস, যা প্রোটিন, ভিটামিন এবং খনিজ পদার্থ সরবরাহ করে। গরু সাধারণত ঘাস, খড় এবং অন্যান্য গাছপালা খায়। গ্রামীণ অর্থনীতিতে গরুর ভূমিকা অত্যন্ত গুরুত্বপূর্ণ, কারণ এর সাহায্যে কৃষকেরা ক্ষেত চাষ করতে পারে এবং দুধ বিক্রি করে আয় করতে পারে। এছাড়াও, গরুর গোবর জৈব সার হিসাবে ব্যবহৃত হয়, যা মাটির উর্বরতা বাড়াতে সহায়ক।
-                       </p>
-                    </div>
+
+                <!-- Buttons -->
+                <div class="mt-6 flex flex-col lg:flex-row lg:justify-between gap-4 font-siliguri">
+                    <button class="flex items-center justify-center py-2 px-4 bg-orange-600 text-white rounded text-base lg:text-xl">
+                        <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                        আরো কিনুন
+                    </button>
+                    <button class="flex items-center justify-center py-2 px-4 bg-color-logo text-white rounded text-base lg:text-xl">
+                        চেক আউট করুন
+                        <svg class="w-4 h-4 ml-2 transform rotate-180" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                        
+                    </button>
                 </div>
             </div>
         </div>   
     </section>
-    <!-- all products -->
-    <section class="bg-white py-8">
-        <div class="container mx-auto font-nunito p-4">
-            <div class=" flex justify-between items-center">
-                <h1 class=" font-bold text-xl pb-2 font-nunito">All Products</h1>
-                <a href="#" class=" font-bold pb-2 font-siliguri text-orange-600 flex justify-center items-center hover:text-blue-600">সব দেখুন 
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" ms-3 size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                  </svg>
-                </a>
-            </div>
-            <hr class="bg-gray-500 shadow-md">
-            <div class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 gap-6 py-8">
-                
-                <div class=" border border-gray-300 md:p-4 p-2 rounded-3xl shadow-lg relative">
-                    <div class="flex flex-col justify-center items-center text-white bg-pink-600 rounded-full font-nunito h-12 w-12 p-4 absolute md:top-2 top-1 md:right-2 right-1">
-                        <p class="text-[12px]">১০%</p>
-                        <p class="text-[12px]">ছাড়</p>
-                    </div>
-                    <a href="#" class="flex justify-center items-center">
-                        <img src="images/homeDecor.webp" alt="" class="rounded-3xl h-full w-full">
-                    </a>
-                    <a href="#" class="flex justify-center items-center">
-                        <p class="font-serif pt-2 text-center text-sm md:text-lg ">ব্যাটারি চালিত মানিপ্লান্ট</p>
-                    </a>
-                    <div class="flex justify-center items-center gap-x-4 my-2">
-                        <p class="text-orange-600 font-medium line-through">৳ 900</p>
-                        <p class="text-blue-800 font-medium">৳ 1000</p>
-                    </div>
-                    <a href="#" class="py-2 w-full bg-color-logo text-white rounded-full flex justify-center items-center">অর্ডার করুন</a>
-                </div>
-                <div class=" border border-gray-300 md:p-4 p-2 rounded-3xl shadow-lg relative">
-                    <div class="flex flex-col justify-center items-center text-white bg-pink-600 rounded-full font-nunito h-12 w-12 p-4 absolute md:top-2 top-1 md:right-2 right-1">
-                        <p class="text-[12px]">১০%</p>
-                        <p class="text-[12px]">ছাড়</p>
-                    </div>
-                    <a href="#" class="flex justify-center items-center">
-                        <img src="images/homeDecor.webp" alt="" class="rounded-3xl h-full w-full">
-                    </a>
-                    <a href="#" class="flex justify-center items-center">
-                        <p class="font-serif pt-2 text-center text-sm md:text-lg ">ব্যাটারি চালিত মানিপ্লান্ট</p>
-                    </a>
-                    <div class="flex justify-center items-center gap-x-4 my-2">
-                        <p class="text-orange-600 font-medium line-through">৳ 900</p>
-                        <p class="text-blue-800 font-medium">৳ 1000</p>
-                    </div>
-                    <a href="#" class="py-2 w-full bg-color-logo text-white rounded-full flex justify-center items-center">অর্ডার করুন</a>
-                </div>
-                <div class=" border border-gray-300 md:p-4 p-2 rounded-3xl shadow-lg relative">
-                    <div class="flex flex-col justify-center items-center text-white bg-pink-600 rounded-full font-nunito h-12 w-12 p-4 absolute md:top-2 top-1 md:right-2 right-1">
-                        <p class="text-[12px]">১০%</p>
-                        <p class="text-[12px]">ছাড়</p>
-                    </div>
-                    <a href="#" class="flex justify-center items-center">
-                        <img src="images/homeDecor.webp" alt="" class="rounded-3xl h-full w-full">
-                    </a>
-                    <a href="#" class="flex justify-center items-center">
-                        <p class="font-serif pt-2 text-center text-sm md:text-lg ">ব্যাটারি চালিত মানিপ্লান্ট</p>
-                    </a>
-                    <div class="flex justify-center items-center gap-x-4 my-2">
-                        <p class="text-orange-600 font-medium line-through">৳ 900</p>
-                        <p class="text-blue-800 font-medium">৳ 1000</p>
-                    </div>
-                    <a href="#" class="py-2 w-full bg-color-logo text-white rounded-full flex justify-center items-center">অর্ডার করুন</a>
-                </div>
-                <div class=" border border-gray-300 md:p-4 p-2 rounded-3xl shadow-lg relative">
-                    <div class="flex flex-col justify-center items-center text-white bg-pink-600 rounded-full font-nunito h-12 w-12 p-4 absolute md:top-2 top-1 md:right-2 right-1">
-                        <p class="text-[12px]">১০%</p>
-                        <p class="text-[12px]">ছাড়</p>
-                    </div>
-                    <a href="#" class="flex justify-center items-center">
-                        <img src="images/homeDecor.webp" alt="" class="rounded-3xl h-full w-full">
-                    </a>
-                    <a href="#" class="flex justify-center items-center">
-                        <p class="font-serif pt-2 text-center text-sm md:text-lg ">ব্যাটারি চালিত মানিপ্লান্ট</p>
-                    </a>
-                    <div class="flex justify-center items-center gap-x-4 my-2">
-                        <p class="text-orange-600 font-medium line-through">৳ 900</p>
-                        <p class="text-blue-800 font-medium">৳ 1000</p>
-                    </div>
-                    <a href="#" class="py-2 w-full bg-color-logo text-white rounded-full flex justify-center items-center">অর্ডার করুন</a>
-                </div>
-            </div>
-            <div class="flex justify-center items-center">
-                <a href="#" class=" font-bold py-2 font-siliguri text-white  bg-orange-600 px-12 rounded-full  flex justify-center items-center">
-                    <p>আরো দেখুন</p>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" ms-3 size-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                  </svg>
-                </a>
-            </div>
-            <hr class="bg-gray-500 shadow-md mt-4">
-        </div>
-     </section>
     </main>
     <footer class="bg-white text-black font-nunito">
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
