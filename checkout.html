@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meher's Collection</title>
+    <link rel="stylesheet" href="css/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.maateen.me/adorsho-lipi/font.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <section class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-3 sm:py-0">
+            <nav class="xl:container w-full mx-auto px-4 md:px-6 lg:px-8 py-2">
+                <div class="md:block hidden">
+                    <div class="relative md:flex md:flex-nowrap flex-wrap items-center justify-between ">
+                        <!-- Left Section: Logo -->
+                        <div class="flex items-center">
+                            <a class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80" href="#" aria-label="Brand">
+                                <img src="images/meherlogo.png" alt="Logo" class=" xl:h-20 lg:h-16 h-12">
+                            </a>
+                        </div>
+                        <!-- Middle Section: Search Bar -->
+                        <div class="flex items-center border border-orange-500 rounded-lg overflow-hidden 2xl:max-w-2xl  xl:max-w-xl lg:max-w-sm max-w-64 w-full mx-4">
+                            <!-- Search Input -->
+                            <input
+                                type="search"
+                                class="w-full px-4 2xl:py-2 xl:py-1.5 lg:py-1 py-0.5 text-sm text-gray-600 focus:outline-none"
+                                placeholder="Search Product..."
+                            />
+                            <!-- Search Button -->
+                            <button class="bg-orange-500 text-white px-3 2xl:py-2 lg:py-1.5  py-0.5">
+                                <!-- Magnifying Glass Icon -->
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                                </svg>
+                                
+                            </button>
+                        </div>
+                        <!-- Right Section: Links -->
+                        <div class="flex items-center 2xl:gap-4 gap-2 ">
+                            <a href="#" class="text-color-logo hover:text-orange-500 focus:outline-none focus:text-orange-500 flex justify-center items-center  gap-x-2 font-semibold 2xl:text-lg xl:text-medium group font-nunito">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="none" 
+                                    viewBox="0 0 24 24" 
+                                    stroke-width="1.5" 
+                                    stroke="currentColor" 
+                                    class="size-6 text-color-logo font-semibold group-hover:text-orange-500">
+                                    <path 
+                                    stroke-linecap="round" 
+                                    stroke-linejoin="round" 
+                                    d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                                </svg>
+                                Track Order
+                            </a>
+                            <a href="#" class="text-color-logo hover:text-orange-500 focus:outline-none focus:text-orange-500 flex justify-center items-center gap-x-2 font-semibold 2xl:text-lg xl:text-medium group font-nunito">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="none" 
+                                    viewBox="0 0 24 24" 
+                                    stroke-width="1.5" 
+                                    stroke="currentColor" 
+                                    class="size-6 text-color-logo font-semibold group-hover:text-orange-500">
+                                    <path 
+                                    stroke-linecap="round" 
+                                    stroke-linejoin="round" 
+                                    d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                </svg>
+                                
+                                Login / Sign Up
+                            </a>
+                            
+                            
+                            <a class="text-color-logo hover:text-orange-500 focus:outline-none focus:text-orange-500 relative group" href="#">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="none" viewBox="0 0 24 24" 
+                                    stroke-width="1.5" 
+                                    stroke="currentColor" 
+                                    class="size-6 text-color-logo font-semibold group-hover:text-orange-500">
+                                    <path 
+                                    stroke-linecap="round" 
+                                    stroke-linejoin="round" 
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                                
+                                <span class="absolute bottom-4 left-5 text-xs bg-orange-500 text-white rounded-full w-4 h-4 flex items-center justify-center">0</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:hidden block">
+                    <div class="flex justify-between items-center">
+                        <button type="button" class="p-3 inline-flex items-center gap-x-2 text-sm font-medium border border-transparent bg-white  disabled:opacity-50 disabled:pointer-events-none  rounded-full shadow-md " aria-haspopup="dialog" aria-expanded="false" aria-controls="hs-offcanvas-example" data-hs-overlay="#hs-offcanvas-example">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                              </svg>
+                        </button>
+                        <div id="hs-offcanvas-example" class="hs-overlay hs-overlay-open:translate-x-0 hidden -translate-x-full fixed top-0 start-0 transition-all duration-300 transform h-full max-w-xs w-full z-[80] bg-white border-e dark:bg-neutral-800 dark:border-neutral-700" role="dialog" tabindex="-1" aria-labelledby="hs-offcanvas-example-label">
+                            <div class="flex justify-between items-center py-3 px-4 border-b ">
+                                <div class="flex items-center" id="hs-offcanvas-example-label">
+                                    <a class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80" href="#" aria-label="Brand">
+                                        <img src="images/meherlogo.png" alt="Logo" class="  h-16">
+                                    </a>
+                                </div>
+                              <button type="button" class="size-8 inline-flex justify-center items-center gap-x-2 rounded-full border border-transparent bg-gray-100 text-gray-800 hover:bg-gray-200 focus:outline-none focus:bg-gray-200 disabled:opacity-50 disabled:pointer-events-none " aria-label="Close" data-hs-overlay="#hs-offcanvas-example">
+                                <span class="sr-only">Close</span>
+                                <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="M18 6 6 18"></path>
+                                  <path d="m6 6 12 12"></path>
+                                </svg>
+                              </button>
+                            </div>
+                            <div class="p-4 flex flex-col bg-color-logo">
+                                <div class="m-1 hs-dropdown [--trigger:hover] relative inline-flex">
+                                    <button id="hs-dropdown-hover-event" type="button" class="hs-dropdown-toggle py-2 px-2 inline-flex items-center gap-x-2 2xl:text-lg text-base font-medium text-white shadow-sm hover:bg-orange-500 focus:outline-none focus:bg-orange-500 disabled:opacity-50 disabled:pointer-events-none font-siliguri" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                                    ফুলের টব
+                                    <svg class="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                                    </button>
+                                
+                                    <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-color-logo shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full font-siliguri" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                                            গরুর বাসা
+                                        </a>
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                                            ছাগলের বাসা
+                                        </a>
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                                            খরগসের বাসা
+                                        </a>
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                                            উটের বাসা
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                                <a href="#" class="py-2 px-2 inline-flex items-center gap-x-2 2xl:text-base text-sm font-medium text-white shadow-sm hover:bg-orange-500 focus:outline-none focus:bg-orange-500 disabled:opacity-50 disabled:pointer-events-none font-siliguri">বিড়ালের বাসা</a>
+                                <div class="m-1 hs-dropdown [--trigger:hover] relative inline-flex">
+                                    <button id="hs-dropdown-hover-event" type="button" class="hs-dropdown-toggle py-2 px-2 inline-flex items-center gap-x-2 2xl:text-lg text-base font-medium text-white shadow-sm hover:bg-orange-500 focus:outline-none focus:bg-orange-500 disabled:opacity-50 disabled:pointer-events-none font-siliguri" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                                    ফুলের টব
+                                    <svg class="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                                    </button>
+                                
+                                    <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-color-logo shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full font-siliguri" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                                            গরুর বাসা
+                                        </a>
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                                            ছাগলের বাসা
+                                        </a>
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                                            খরগসের বাসা
+                                        </a>
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                                            উটের বাসা
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                                <a href="#" class="py-2 px-2 inline-flex items-center gap-x-2 2xl:text-base text-sm font-medium text-white shadow-sm hover:bg-orange-500 focus:outline-none focus:bg-orange-500 disabled:opacity-50 disabled:pointer-events-none font-siliguri">বিড়ালের বাসা</a>
+                                <div class="m-1 hs-dropdown [--trigger:hover] relative inline-flex">
+                                    <button id="hs-dropdown-hover-event" type="button" class="hs-dropdown-toggle py-2 px-2 inline-flex items-center gap-x-2 2xl:text-lg text-base font-medium text-white shadow-sm hover:bg-orange-500 focus:outline-none focus:bg-orange-500 disabled:opacity-50 disabled:pointer-events-none font-siliguri" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                                    ফুলের টব
+                                    <svg class="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                                    </button>
+                                
+                                    <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-color-logo shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full font-siliguri" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                                            গরুর বাসা
+                                        </a>
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                                            ছাগলের বাসা
+                                        </a>
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                                            খরগসের বাসা
+                                        </a>
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                                            উটের বাসা
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                                <a href="#" class="py-2 px-2 inline-flex items-center gap-x-2 2xl:text-base text-sm font-medium text-white shadow-sm hover:bg-orange-500 focus:outline-none focus:bg-orange-500 disabled:opacity-50 disabled:pointer-events-none font-siliguri">বিড়ালের বাসা</a>
+                                <div class="m-1 hs-dropdown [--trigger:hover] relative inline-flex">
+                                    <button id="hs-dropdown-hover-event" type="button" class="hs-dropdown-toggle py-2 px-2 inline-flex items-center gap-x-2 2xl:text-lg text-base font-medium text-white shadow-sm hover:bg-orange-500 focus:outline-none focus:bg-orange-500 disabled:opacity-50 disabled:pointer-events-none font-siliguri" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                                    ফুলের টব
+                                    <svg class="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                                    </button>
+                                
+                                    <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-color-logo shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full font-siliguri" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                                            গরুর বাসা
+                                        </a>
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                                            ছাগলের বাসা
+                                        </a>
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                                            খরগসের বাসা
+                                        </a>
+                                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                                            উটের বাসা
+                                        </a>
+                                        
+                                    </div>
+                                </div>
+                                <a href="#" class="py-2 px-2 inline-flex items-center gap-x-2 2xl:text-base text-sm font-medium text-white shadow-sm hover:bg-orange-500 focus:outline-none focus:bg-orange-500 disabled:opacity-50 disabled:pointer-events-none font-siliguri">বিড়ালের বাসা</a>
+                                
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <a class="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80" href="#" aria-label="Brand">
+                                <img src="images/meherlogo.png" alt="Logo" class=" xl:h-20 lg:h-16 h-12">
+                            </a>
+                        </div>
+                        <!-- Right Section: Links -->
+                        <div class="flex items-center 2xl:gap-4 gap-2 ">
+                            <a class="text-color-logo hover:text-orange-500 focus:outline-none focus:text-orange-500 relative group" href="#">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="none" viewBox="0 0 24 24" 
+                                    stroke-width="1.5" 
+                                    stroke="currentColor" 
+                                    class="size-6 text-color-logo font-semibold group-hover:text-orange-500">
+                                    <path 
+                                    stroke-linecap="round" 
+                                    stroke-linejoin="round" 
+                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                                </svg>
+                                
+                                <span class="absolute bottom-4 left-5 text-xs bg-orange-500 text-white rounded-full w-4 h-4 flex items-center justify-center">0</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-center border border-orange-500 rounded-lg overflow-hidden w-full me-2 mt-4">
+                        <!-- Search Input -->
+                        <input
+                            type="search"
+                            class="w-full px-4  py-1 text-sm text-gray-600 focus:outline-none"
+                            placeholder="Search Product..."
+                        />
+                        <!-- Search Button -->
+                        <button class="bg-orange-500 text-white px-2  py-1">
+                            <!-- Magnifying Glass Icon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                            </svg>
+                            
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <section class=" bg-color-logo md:block hidden">
+            <div class="flex flex-wrap justify-center items-center xl:container w-full mx-auto px-4 md:px-6 ">
+                <div class="m-1 hs-dropdown [--trigger:hover] relative inline-flex">
+                    <button id="hs-dropdown-hover-event" type="button" class="hs-dropdown-toggle py-2 px-2 inline-flex items-center gap-x-2 2xl:text-lg text-base font-medium text-white shadow-sm hover:bg-orange-500 focus:outline-none focus:bg-orange-500 disabled:opacity-50 disabled:pointer-events-none font-siliguri" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                    ফুলের টব
+                    <svg class="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                
+                    <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-color-logo shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full font-siliguri" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                            গরুর বাসা
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                            ছাগলের বাসা
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                            খরগসের বাসা
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                            উটের বাসা
+                        </a>
+                        
+                    </div>
+                </div>
+                <a href="#" class="py-2 px-2 inline-flex items-center gap-x-2 2xl:text-base text-sm font-medium text-white shadow-sm hover:bg-orange-500 focus:outline-none focus:bg-orange-500 disabled:opacity-50 disabled:pointer-events-none font-siliguri">বিড়ালের বাসা</a>
+                <div class="m-1 hs-dropdown [--trigger:hover] relative inline-flex">
+                    <button id="hs-dropdown-hover-event" type="button" class="hs-dropdown-toggle py-2 px-2 inline-flex items-center gap-x-2 2xl:text-lg text-base font-medium text-white shadow-sm hover:bg-orange-500 focus:outline-none focus:bg-orange-500 disabled:opacity-50 disabled:pointer-events-none font-siliguri" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                    ফুলের টব
+                    <svg class="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                
+                    <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-color-logo shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full font-siliguri" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                            গরুর বাসা
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                            ছাগলের বাসা
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                            খরগসের বাসা
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                            উটের বাসা
+                        </a>
+                        
+                    </div>
+                </div>
+                <a href="#" class="py-2 px-2 inline-flex items-center gap-x-2 2xl:text-base text-sm font-medium text-white shadow-sm hover:bg-orange-500 focus:outline-none focus:bg-orange-500 disabled:opacity-50 disabled:pointer-events-none font-siliguri">বিড়ালের বাসা</a>
+                <div class="m-1 hs-dropdown [--trigger:hover] relative inline-flex">
+                    <button id="hs-dropdown-hover-event" type="button" class="hs-dropdown-toggle py-2 px-2 inline-flex items-center gap-x-2 2xl:text-lg text-base font-medium text-white shadow-sm hover:bg-orange-500 focus:outline-none focus:bg-orange-500 disabled:opacity-50 disabled:pointer-events-none font-siliguri" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                    ফুলের টব
+                    <svg class="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                
+                    <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-color-logo shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full font-siliguri" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                            গরুর বাসা
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                            ছাগলের বাসা
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                            খরগসের বাসা
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                            উটের বাসা
+                        </a>
+                        
+                    </div>
+                </div>
+                <a href="#" class="py-2 px-2 inline-flex items-center gap-x-2 2xl:text-base text-sm font-medium text-white shadow-sm hover:bg-orange-500 focus:outline-none focus:bg-orange-500 disabled:opacity-50 disabled:pointer-events-none font-siliguri">বিড়ালের বাসা</a>
+                <div class="m-1 hs-dropdown [--trigger:hover] relative inline-flex">
+                    <button id="hs-dropdown-hover-event" type="button" class="hs-dropdown-toggle py-2 px-2 inline-flex items-center gap-x-2 2xl:text-lg text-base font-medium text-white shadow-sm hover:bg-orange-500 focus:outline-none focus:bg-orange-500 disabled:opacity-50 disabled:pointer-events-none font-siliguri" aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
+                    ফুলের টব
+                    <svg class="hs-dropdown-open:rotate-180 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+                    </button>
+                
+                    <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-60 bg-color-logo shadow-md rounded-lg p-1 space-y-0.5 mt-2 after:h-4 after:absolute after:-bottom-4 after:start-0 after:w-full before:h-4 before:absolute before:-top-4 before:start-0 before:w-full font-siliguri" role="menu" aria-orientation="vertical" aria-labelledby="hs-dropdown-hover-event">
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                            গরুর বাসা
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                            ছাগলের বাসা
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                            খরগসের বাসা
+                        </a>
+                        <a class="flex items-center gap-x-3.5 py-2 px-3 rounded-lg  text-lg text-white hover:bg-orange-500 focus:outline-none focus:bg-orange-500  " href="#">
+                            উটের বাসা
+                        </a>
+                        
+                    </div>
+                </div>
+                <a href="#" class="py-2 px-2 inline-flex items-center gap-x-2 2xl:text-base text-sm font-medium text-white shadow-sm hover:bg-orange-500 focus:outline-none focus:bg-orange-500 disabled:opacity-50 disabled:pointer-events-none font-siliguri">বিড়ালের বাসা</a>
+                
+            </div>
+        </section>
+    </header>
+    <main>
+    <!-- Product Section -->
+    <section class="container mx-auto py-8 md:py-16 px-4">
+        <!-- Address Form -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Left Column -->
+            <div class="font-siliguri">
+                <h2 class="text-2xl font-semibold mb-4">ডেলিভারী ঠিকানা দিন</h2>
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="col-span-2 flex flex-col md:flex-row lg:flex-col xl:flex-row items-start md:items-center lg:items-start xl:items-center gap-4">
+                        <label class="font-semibold text-gray-700">ডেলিভারী লোকেশন: </label>
+                        <div class="flex flex-col md:flex-row justify-start items-start md:items-center gap-x-0 md:gap-x-4">
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="gender" value="male" class="form-radio h-5 w-5 text-blue-600">
+                                <span class="ml-2 font-medium text-gray-700">পৃথিবীর ভিতরে - ২০ টাকা</span>
+                            </label>
+                            <label class="inline-flex items-center">
+                                <input type="radio" name="gender" value="female" class="form-radio h-5 w-5 text-blue-600">
+                                <span class="ml-2 font-medium text-gray-700">মঙ্গলগ্রহে - ৩০ টাকা</span>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- First name -->
+                    <div class="col-span-2 md:col-span-1">
+                        <label class="block  font-medium text-gray-700">নাম: </label>
+                        <input type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="আপনার নাম  লিখূন">
+                    </div>
+                    <!-- Phone number -->
+                    <div class="col-span-2 md:col-span-1">
+                        <label class="block  font-medium text-gray-700">মোবাইল নম্বর: </label>
+                        <input type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="+8801876987622">
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-span-2 md:col-span-1">
+                        <label class="block  font-medium text-gray-700">ই-মেইল: <span class="text-red-600 text-xs">(যদি থাকে)</span></label>
+                        <input type="email" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="you@example.com">
+                    </div>
+
+                    <!-- Division -->
+                    <div class="col-span-2 md:col-span-1">
+                        <label class="block  font-medium text-gray-700">বিভাগ:</label>
+                        <select class="mt-1 block w-full px-3 pt-2 pb-0.5 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                            <option>ঢাকা</option>
+                            <option>চট্রগ্রাম</option>
+                            <option>সিলেট</option>
+                            <option>খুলনা</option>
+                            <option>বরিশাল</option>
+                            <option>রাজশাহী</option>
+                            <option>রংপুর</option>
+                            <option>ময়মনসিংহ</option>
+                        </select>
+                    </div>
+
+                    <!-- State/province -->
+                    <div class="col-span-2 md:col-span-1">
+                        <label class="block  font-medium text-gray-700">জেলা:</label>
+                        <select class="mt-1 block w-full px-3 pt-2 pb-0.5 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                            <option>ঢাকা</option>
+                        </select>
+                    </div>
+
+                    <!-- Area/Upzilla -->
+                    <div class="col-span-2 md:col-span-1">
+                        <label class="block  font-medium text-gray-700">থানা / উপজেলা:</label>
+                        <select class="mt-1 block w-full px-3 pt-2 pb-0.5 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                            <option>মোহাম্মদপুর</option>
+                        </select>
+                    </div>
+
+                    <!-- Zip/postal code -->
+                    <div class="col-span-2">
+                        <label class="block  font-medium text-gray-700">পোস্ট কোড :</label>
+                        <input type="text" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                    </div>
+
+                    <!-- Address -->
+                    <div class="col-span-2">
+                        <label class="block  font-medium text-gray-700">ঠিকানা: <span class="text-red-600 text-xs">(এখানে শুধুমাত্র ঠিকানা লিখুন । থানা/উপজেলা , জেলা, বিভাগ এবং পোস্ট কোড লিখতে হবে না। )</span></label>
+                        <textarea class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Right Column: Order Summary -->
+            <div class="font-siliguri">
+                <h2 class="text-2xl font-semibold mb-4">আপনার অর্ডার সমূহ</h2>
+                <div>
+                    <div class="hidden md:block">
+                        <div class="grid grid-cols-3 text-center font-bold font-bangla text-color-logo">
+                            <p> ছবি </p>
+                            <p> নাম</p>
+                            <p>দাম</p>
+                        </div>
+                    </div>
+                    <hr class="border border-gray-400">
+                    <div class="font-bangla">
+                        <div class="grid grid-col-1 md:grid-cols-3 text-center py-2 gap-y-2 md:gap-y-0 ps-6 md:ps-0">
+                            <div class="flex justify-start md:justify-center items-center">
+                                <img src="images/2.webp" alt="Miniket Standard 1kg" class="w-12 h-12 ">
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center">
+                                <p class=" font-semibold text-color-logo me-4 block md:hidden">প্রোডাক্ট:</p>
+                                <p class="text-base ">খাসির মাংস উইথ কালা ভূনা</p>
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center">
+                                <p class=" font-semibold font-2xl text-color-logo me-4 block md:hidden">দাম:</p>
+                                <p class="text-base" >২২০ টাকা</p>
+                            </div>
+                        </div>
+                        <hr class="border border-gray-400">
+                    </div>
+                    <div class="font-bangla">
+                        <div class="grid grid-cols-2 md:grid-cols-3 pb-2 text-center pt-2 gap-y-2 md:gap-y-0 ps-6 md:ps-0 font-bold">
+                            <div class="flex justify-start md:justify-center items-center col-span-0 md:col-span-2">
+                                <p class="text-base">সাব-টোটাল</p>
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center col-span-0 md:col-span-1">
+                                <p  class="text-base">২২০ টাকা</p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 md:grid-cols-3 pb-2 text-center  gap-y-2 md:gap-y-0 ps-6 md:ps-0">
+                            <div class="flex justify-start md:justify-center items-center col-span-0 md:col-span-2">
+                                <p class="text-sm">ডেলিভারী চার্জ</p>
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center col-span-0 md:col-span-1">
+                                <p  class="text-sm">২২০ টাকা</p>
+                            </div>
+                        </div>
+                        <hr class="border border-gray-400">
+                    </div>
+                    <div class="font-bangla">
+                        <div class="grid grid-cols-2 md:grid-cols-3 pb-2 text-center pt-2 gap-y-2 md:gap-y-0 ps-6 md:ps-0 font-bold">
+                            <div class="flex justify-start md:justify-center items-center col-span-0 md:col-span-2">
+                                <p class="text-base">সর্বমোট</p>
+                            </div>
+                            <div class="flex justify-start md:justify-center items-center col-span-0 md:col-span-1">
+                                <p  class="text-base">২২০ টাকা</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-8 flex flex-col md:flex-row lg:flex-col xl:flex-row items-start md:items-center lg:items-start xl:items-center gap-4">
+                    <label class="font-semibold text-gray-700">ডেলিভারী :  <br><span class="text-red-600 text-xs">(ক্যাশ ইন ডেলিভারীর ক্ষেত্রে শুধুমাত্র কুরিয়ার চার্জ আগে দিতে হবে।)</span> </label>
+                    <div class="flex  gap-x-4">
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="gender" value="female" class="form-radio h-5 w-5 text-blue-600">
+                            <span class="ml-2 font-medium text-gray-700">ক্যাশ ইন ডেলিভারী</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="gender" value="female" class="form-radio h-5 w-5 text-blue-600">
+                            <span class="ml-2 font-medium text-gray-700">প্রি-পেইড ডেলিভারী</span>
+                        </label>
+                    </div>
+                </div>
+                <div class=" flex flex-col md:flex-row lg:flex-col xl:flex-row items-start md:items-center lg:items-start xl:items-center gap-4">
+                    <label class="font-semibold text-gray-700">পেমেন্ট ‍ অপশন : </label>
+                    <div class="flex  gap-x-4">
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="gender" value="female" class="form-radio h-5 w-5 text-blue-600">
+                            <span class="ml-2 font-medium text-gray-700">বিকাশ</span>
+                        </label>
+                        <label class="inline-flex items-center">
+                            <input type="radio" name="gender" value="female" class="form-radio h-5 w-5 text-blue-600">
+                            <span class="ml-2 font-medium text-gray-700">নগদ</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center">
+                <button class="bg-color-logo px-6 py-2 rounded-md text-white text-lg font-semibold font-siliguri hover:bg-orange-600">অর্ডার করুন</button>
+            </div>
+        </div>   
+    </section>
+    </main>
+    <footer class="bg-white text-black font-nunito">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Left Column: Company Info -->
+          <div class="text-center">
+            <img src="images/meherlogo.png" alt="Meher's Collection" class="mx-auto mb-4 h-20" />
+            <p class="mb-2">Mohammadpur, Rayer Bazar <br>Dhaka 1207, Bangladesh</p>
+            <a href="tel:+8801884444299" class=" flex justify-center items-center gap-x-3">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke-width="1.5" 
+                    stroke="currentColor" 
+                    class="size-5">
+                    <path 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    d="M20.25 3.75v4.5m0-4.5h-4.5m4.5 0-6 6m3 12c-8.284 0-15-6.716-15-15V4.5A2.25 2.25 0 0 1 4.5 2.25h1.372c.516 0 .966.351 1.091.852l1.106 4.423c.11.44-.054.902-.417 1.173l-1.293.97a1.062 1.062 0 0 0-.38 1.21 12.035 12.035 0 0 0 7.143 7.143c.441.162.928-.004 1.21-.38l.97-1.293a1.125 1.125 0 0 1 1.173-.417l4.423 1.106c.5.125.852.575.852 1.091V19.5a2.25 2.25 0 0 1-2.25 2.25h-2.25Z" />
+                  </svg>
+                01616-044476
+            </a>
+            <a href="tel:+8801884444299" class=" flex justify-center items-center gap-x-3 my-2">
+                <svg 
+                    xmlns="http://www.w3.org/2000/svg" 
+                    fill="none" 
+                    viewBox="0 0 24 24" 
+                    stroke-width="1.5" 
+                    stroke="currentColor" 
+                    class="size-5">
+                    <path 
+                    stroke-linecap="round" 
+                    stroke-linejoin="round" 
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>
+                  
+                support.meherscollection.com
+            </a>
+          </div>
+      
+          <!-- Middle Column: Useful Links -->
+          <div class="text-center">
+            <h3 class="font-bold mb-4">USEFUL LINK</h3>
+            <ul>
+              <li><a href="#" class="hover:underline">Contact Us</a></li>
+              <li><a href="#" class="hover:underline">Order procedure</a></li>
+              <li><a href="#" class="hover:underline">Delivery Rules</a></li>
+              <li><a href="#" class="hover:underline">Return Policy</a></li>
+            </ul>
+          </div>
+      
+          <!-- Middle Column: Links -->
+          <div class="text-center">
+            <h3 class="font-bold mb-4">LINK</h3>
+            <ul>
+              <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+              <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+            </ul>
+          </div>
+      
+          <!-- Right Column: Stay Connected & Payment -->
+          <div class="text-center">
+            <h3 class="font-bold mb-4">STAY CONNECTED</h3>
+            <div class="flex justify-center space-x-4 mb-4">
+                <a href="#" >
+                    <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 512 512"
+                        class="text-blue-600 h-8">
+                        <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/>
+                    </svg>
+                </a>
+              <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"  class="text-blue-600 h-8" > <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg></a>
+            </div>
+            <h3 class="font-bold ">PAYMENT</h3>
+                <img src="images/bkash.png" alt="Payment Methods" class="mx-auto  w-60" />
+          </div>
+        </div>
+      
+        <!-- Bottom Copyright Section -->
+        <div class="bg-color-logo text-white py-4 text-center">
+          <p>Copyright © 2024 Meher's Collection. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="node_modules/preline/dist/preline.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          loop: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+        });
+      </script>
+      <script>
+        var swiper = new Swiper(".mySwiper1", {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                },
+                1024: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                },
+                1280: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+                },
+                
+            },
+        });
+      </script>
+      <script>
+        var swiper = new Swiper(".mySwiper2", {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                },
+                768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                },
+                1024: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+                },
+                1280: {
+                slidesPerView: 5,
+                spaceBetween: 30,
+                },
+                
+            },
+        });
+      </script>
+</body>
+</html>
