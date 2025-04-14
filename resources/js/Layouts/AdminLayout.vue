@@ -66,7 +66,7 @@ const data = [
                     :is="nav.link ? Link : 'div'"
                     :key="index"
                     v-bind="nav.link ? { href: nav.link } : {}"
-                    class="group flex items-center gap-3 text-gray-700 font-medium px-4 py-2 transition-all duration-300 hover:bg-[#132749] hover:text-white cursor-pointer"
+                    class="group flex items-center gap-3 text-gray-700 shadow font-medium px-4 py-2 transition-all duration-300 hover:bg-[#132749] hover:text-white cursor-pointer"
                 >
                     <!-- Icon -->
                     <span
