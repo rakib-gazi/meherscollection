@@ -1,0 +1,1 @@
+1. i disabled csrf for develop purpose. i have to enable it before production

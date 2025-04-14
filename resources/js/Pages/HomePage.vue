@@ -1,0 +1,18 @@
+<script setup>
+import MainLayout from "@/Layouts/MainLayout.vue";
+
+defineOptions({ layout: MainLayout })
+</script>
+
+<template>
+    <MainLayout>
+        <div class="min-h-screen flex items-center justify-center bg-gray-100">
+            <h1 class="text-4xl font-bold text-red-600">Tailwind CSS is working! 🎉</h1>
+        </div>
+    </MainLayout>
+
+</template>
+
+<style scoped>
+
+</style>
