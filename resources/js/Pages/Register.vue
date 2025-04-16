@@ -1,7 +1,7 @@
 <script setup>
 
 import AdminLayout from "@/Layouts/AdminLayout.vue";
-import {useForm} from "@inertiajs/vue3";
+import {router, useForm} from "@inertiajs/vue3";
 const data = useForm({
     firstName: '',
     lastName: '',
@@ -11,7 +11,11 @@ const data = useForm({
     role:''
 })
 const register = ()=>{
-    console.log(data);
+    data.post("/super-admin/add-user", {
+        onsuccess: ()=>{
+            alert("success");
+        }
+    });
 }
 </script>
 
