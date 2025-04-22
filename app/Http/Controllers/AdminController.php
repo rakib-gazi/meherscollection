@@ -25,8 +25,8 @@ class AdminController extends Controller
         DB::beginTransaction();
         try {
             $data = $request->validate([
-                'firstName' => 'required|string|max:50| min:3',
-                'lastName' => 'required|string|max:50| min:3',
+                'firstName' => 'required|string|max:50|min:3',
+                'lastName' => 'required|string|max:50|min:3',
                 'email' => 'required|email|unique:users,email',
                 'mobile' => 'required|string|unique:users,mobile|min:11|max:14',
                 'password' => 'required|string|min:6',
@@ -43,11 +43,7 @@ class AdminController extends Controller
             return Redirect::back()->withErrors($e->getMessage());
         }
     }
-    function getAllUsers()
-    {
-        $users =  User::get();
-        return Inertia::render('AllUser', ['users' => $users]);
-    }
+
     function  AddProduct(Request $request)
     {
         return Inertia::render('AddProduct');
