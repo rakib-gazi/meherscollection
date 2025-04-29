@@ -62,7 +62,7 @@ const register = () => {
                 <!-- Mobile -->
                 <div class="mb-5">
                     <label for="mobile" class="block mb-2 font-medium text-gray-900">Mobile Number</label>
-                    <input type="text" id="mobile" v-model="data.mobile"
+                    <input type="phone" id="mobile" v-model="data.mobile"
                            class="shadow-xs bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2.5"
                             />
                     <div v-if="data.errors.mobile" class="text-red-500 text-sm mt-1">{{ data.errors.mobile }}</div>
