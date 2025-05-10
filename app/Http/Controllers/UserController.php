@@ -103,7 +103,7 @@ class UserController extends Controller
             ->count();
         if ($count == 1) {
             $token = JWTToken::CreateToken($email);
-            return redirect('super-admin')->with('token', $token);
+            return redirect('super-admin')->with('token', $token)->cookie('token', $token, time() + 60 * 60 * 24);
         }
         else{
             return Redirect::back()->withErrors([
@@ -111,5 +111,8 @@ class UserController extends Controller
             ]);
         }
 
+    }
+    function logout(Request $request){
+        return redirect('/login')->cookie('token', '', -1);
     }
 }
