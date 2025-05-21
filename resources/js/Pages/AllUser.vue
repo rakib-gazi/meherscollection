@@ -1,6 +1,6 @@
 <script setup>
 import AdminLayout from "@/Layouts/AdminLayout.vue";
-import {useForm, usePage, router } from "@inertiajs/vue3";
+import {useForm, usePage, router, Link} from "@inertiajs/vue3";
 import {ref} from "vue";
 import Swal from "sweetalert2";
 import {Inertia} from "@inertiajs/inertia";
@@ -66,6 +66,17 @@ const updateRegister = () => {
 
     });
 };
+const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 3000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+        toast.onmouseenter = Swal.stopTimer;
+        toast.onmouseleave = Swal.resumeTimer;
+    }
+});
 
 const deleteUser = (id) => {
     Swal.fire({
@@ -79,7 +90,10 @@ const deleteUser = (id) => {
     }).then((result) => {
         if (result.isConfirmed) {
             router.get(`/super-admin/delete-user/${id}`)
-            // if(page.flash.status)
+            Toast.fire({
+                icon: "warning",
+                title: "User Deleted successfully"
+            });
         }
     });
 };
@@ -89,6 +103,15 @@ const deleteUser = (id) => {
 
 <template>
     <AdminLayout>
+        <div class="flex justify-between items-center">
+            <Link href="/super-admin" class="mb-4 text-white bg-cyan-950 hover:bg-blue-700 font-medium rounded-lg px-4 py-2 flex justify-center items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                </svg>
+
+                Go Back
+            </Link>
+        </div>
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg font-nunito">
             <table class="w-full text-sm text-left rtl:text-right  ">
                 <thead class=" text-white  bg-[#132749]">

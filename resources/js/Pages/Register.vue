@@ -1,6 +1,6 @@
 <script setup>
 import AdminLayout from "@/Layouts/AdminLayout.vue";
-import { useForm } from "@inertiajs/vue3";
+import {Link, useForm} from "@inertiajs/vue3";
 import Swal from "sweetalert2";
 
 // Set up form state
@@ -30,7 +30,17 @@ const register = () => {
 
 <template>
     <AdminLayout>
+        <div class="flex justify-between items-center">
+            <Link href="/super-admin" class="mb-4 text-white bg-cyan-950 hover:bg-blue-700 font-medium rounded-lg px-4 py-2 flex justify-center items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+                </svg>
+
+                Go Back
+            </Link>
+        </div>
         <div class="bg-white p-6 rounded-md max-w-lg mx-auto">
+            <h1 class="text-2xl text-cyan-950 font-bold text-center py-3">Add User</h1>
             <form class="w-full font-nunito" @submit.prevent="register">
                 <!-- First Name -->
                 <div class="mb-5">
@@ -91,8 +101,7 @@ const register = () => {
                 </div>
 
                 <!-- Submit -->
-                <button type="submit"
-                        class="text-white bg-[#10284a] hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5">Add User</button>
+                <button type="submit" class="text-white bg-[#10284a] hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 w-full">Add User</button>
             </form>
         </div>
     </AdminLayout>
